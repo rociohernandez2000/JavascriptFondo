@@ -49,3 +49,60 @@ invierteCadena2("Computadora");
 
 //funcion que recibe una cadena y una letra, dicha funciona tendra que contar vuantas veces aparece la letra en la cadena
 //Ejemplo: cuentaCaracteres("Ferrari","r")=3
+
+console.log("----Cuenta Letra----")
+function cuentaCaracteres(palabra, letra){
+    let cuenta=0;
+    for(let i=palabra.length; i>0; i--){
+        const letraActual=palabra.substring(i, i-1);
+        if(letraActual==letra){
+            cuenta=cuenta+1
+        }
+    }
+    return cuenta;
+}
+console.log(cuentaCaracteres("oso","o"));
+
+console.log("---metodo Burbuja-----")
+//metodo de ordenamiento de Burbuja
+//arreglo desordenado
+const array=[4,2,1,3];
+function bubbleSort(arreglo){
+    for(let i=0;i<arreglo.length;i++){
+        for(let j=0; j<arreglo.length-i-1; j++){
+            if(arreglo[j]>arreglo[j+1]){
+                const temporal=arreglo[j+1];
+                arreglo[j+1]=arreglo[j];
+                arreglo[j]=temporal;
+            }
+        }
+
+    }
+    console.log(arreglo);
+}
+bubbleSort(array)
+
+// construir una funcion que reciba un arreglo y una palabra 
+// esta palabra puede ser "mayor" o "menor", si es mayor
+// devuelve el mayor del arreglo y es es menor devuelve el menor.
+
+console.log("----funcion arreglo mayor-menor----");
+const arrayX=[53,31,12,108,4,22,0,24,29,8];
+function filtrarArreglo(arreglo, palabra){
+    for(let i=0; i<arreglo.length;i++){
+        for (let j=0; j<arreglo.length-i-1; j++){
+            if(arreglo[j]>arreglo[j+1]){
+                const temporal=arreglo[j+1];
+                arreglo[j+1]=arreglo[j];
+                arreglo[j]=temporal;
+            }
+        }
+    }
+    if(palabra=="menor"){
+        console.log(arreglo[0]);
+    } else{
+        console.log(arreglo[arreglo.length-1]);
+    }
+}
+
+filtrarArreglo(arrayX,"mayor")
