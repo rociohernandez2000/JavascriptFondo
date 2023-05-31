@@ -1,0 +1,6 @@
+1. Ciclos: for, while, foreach, do-while
+2. Array methids: foreach, filter, map
+3. HTML
+4. CSS(flexbov, CSSGrid)
+5. DOM
+6. Eventos
