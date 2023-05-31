@@ -1,4 +1,4 @@
-'use scict';
+'use strict';
 
 class ClaseAuto{
     //variables globales: Puede ser utilizada en todo el bloque padre. solo se utilizan en clases
