@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="style" href="../normalize.css">
-    <link rel="style" href="../styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+
+<body class="body">
   <header class="header">
     <div class="header__contenido contenedor-80">
-        <div class="header__logo">
-            <img src="" alt="Aqui va el logo">
-        </div>
-       <nav class="header__nav">
-        <a class=" nav__a" href="">Inicio</a>
-        <a class=" nav__a" href="">Nosotros</a>
-        <a class=" nav__a" href="">Contacto</a>
-        <a class=" nav__a" href="">Soporte</a>
-       </nav>
+      <div class="header__logo">
+        <img src="" alt="Aqui va el logo">
+      </div>
+      <nav class="header__nav">
+        <a class="nav__a" href="">Inicio</a>
+        <a class="nav__a" href="">Nosotros</a>
+        <a class="nav__a" href="">Contacto</a>
+        <a class="nav__a" href="">Soporte</a>
+      </nav>
     </div>
   </header>
-   
-  
-  <main class="main">
-   </main>
-   <footer class="footer">
 
-   </footer> 
-<script src="../js/app.js"></script>
+
+  <main class="main contenedor-80">
+    <section class="section">
+      <div class="section__buscador">
+        <div class="buscador__entrada">
+          <label for="inputBuscar">Quiero encontrar: </label>
+          <input type="text" id="inputBuscar" placeholder="¿Que quieres buscar?">
+        </div>
+        <div class="buscador__boton">
+          <input type="button" value="Buscar">
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <footer class="footer">
+
+  </footer>
+  <script src="../js/app.js"></script>
 </body>
+
 </html>

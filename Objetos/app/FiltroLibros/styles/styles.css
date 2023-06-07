@@ -12,7 +12,10 @@ a,
 h1, h2, h3, h4, h5, h6,
 p,
 section,
-aside{
+aside,
+header, 
+nav,
+body{
     margin: 0;
     padding: 0;
 }
@@ -37,13 +40,29 @@ h5{
 
     font-size: 2rem;
 }
-.nav__a{
-    font-size: 3.5rem;
-    text-decoration: none;
-}
 
 .contenedor-80{
     max-width: 80%;
     margin:0 auto;
+}
 
+.header__nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.nav__a{
+    font-size: 3.5rem;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.section__buscador{
+    display: flex;
+    gap: 2rem;
 }
