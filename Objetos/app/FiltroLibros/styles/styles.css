@@ -64,5 +64,31 @@ h5{
 
 .section__buscador{
     display: flex;
+    align-items: center;
     gap: 2rem;
+}
+
+.entrada__etiqueta{
+    font-size: 3rem;
+}
+
+.header{
+    margin-bottom: 2rem;
+}
+
+.buscador__entrada{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.entrada_texto{
+    /*
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+    padding: 0.5rem 1rem 0.5rem 1rem;*/
+    padding: 0.5rem 1rem;
 }
